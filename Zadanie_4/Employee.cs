@@ -8,8 +8,8 @@ namespace Zadanie_4
 {
     class Employee
     {
-        String imie, nazwisko;
-        double stawka, wyplata, stankonta;
+        public String imie, nazwisko;
+        public double stawka, wyplata, stankonta;
 
         public Employee(String name, String surname, double wage)
         {
@@ -20,7 +20,7 @@ namespace Zadanie_4
 
         public void RegisterTime(double czas)
         {
-            if (czas < 8)  wyplata += czas * stawka;
+            if (czas <= 8)  wyplata += czas * stawka;
             else wyplata += (czas - 8) * (stawka * 2) + (8 * stawka);
         }
 

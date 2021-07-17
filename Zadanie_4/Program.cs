@@ -20,6 +20,7 @@ namespace Zadanie_4
             emp1.RegisterTime(11);
             emp1.PaySalary();
 
+
             Console.ReadKey();
         }
     }
